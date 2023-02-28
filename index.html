@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MI CV - Martin Doval (sin Bootstrap)</title>
+    <link href="css/estilos.css" rel="stylesheet" type="text/css" />
+    <link href="css/secciones.css" rel="stylesheet" type="text/css" />
+    <link href="css/menu-navegacion.css" rel="stylesheet" type="text/css" />    
+    <script src="js/functions.js"></script>
+  </head>
+  <body onload="iniciarPagina()">
+    <!-- Estructura de Mi CV -->
+    <div class="container">
+      <a href="#inicio" class="btn-flotante"><i class="material-symbols-outlined"> arrow_circle_up </i></a>
+      <section class="section" id="inicio">
+        <div class=""menu-fijo>
+          <ul class="ulmenu">
+            <li class="limenu"><a href="#inicio">Inicio</a></li>
+            <li class="limenu"><a href="#habilidades">Mis habilidades</a></li>
+            <li class="limenu"><a href="#clientes">Mis Clientes</a></li>
+            <li class="limenu"><a href="#about">Acerca de mi</a></li>
+            <li class="limenu"><a href="#contacto">Contacto</a></li>
+          </ul>        
+        </div>
+        <div class="encabezado">
+          <div class="imagen-de-perfil">
+            <img id="foto-perfil" class="picture-profile" src="images/loading-gif.gif" />
+          </div>
+          <hr />
+          <div>
+            <h4 style="color: grey;"><div id="titulo"></div></h4>
+            <br />
+            <h1><div id="descripcion"></div></h1>
+          </div>
+          <div class="iconos-menu-perfil">
+            <i id='icono-nombre' class="material-symbols-outlined"  onmouseover="mostrarDatos('nombre')"> face </i>
+            <i id='icono-telefono' class="material-symbols-outlined"  onmouseover="mostrarDatos('telefono')"> mobile_friendly </i>
+            <i id='icono-direccion' class="material-symbols-outlined" onmouseover="mostrarDatos('direccion')"> home </i>
+            <i id='icono-email' class="material-symbols-outlined" onmouseover="mostrarDatos('email')"> mail </i>
+          </div>
+        </div>
+      </section>
+      <div class="cuerpo-curriculum">
+        <section class="section" id="habilidades">
+          <div class="contenedor-mishabilidades">
+            <div class="titulo-seccion">
+              <h1>Mis Habilidades</h1>
+            </div>
+            <div>
+              <p>De momento me estoy capacitando en varios temas, para obtener un mayor numero de habiidades</p>
+            </div>
+            <div>
+                <div class="habilidades"><i class="material-symbols-outlined"> html </i>Disenio web con HTML</div>
+                <div class="habilidades"><i class="material-symbols-outlined"> php </i>Desarrollo en PHP usando Yii Framework</div>
+                <div class="habilidades"><i class="material-symbols-outlined"> integration_instructions </i> Principiante en React</div>
+                <div class="habilidades"><i class="material-symbols-outlined"> desktop_windows </i>Soporte Tecnico en equipos Windows</div>
+                <div class="habilidades"><i class="material-symbols-outlined"> Database </i>Configuracion de BD en MySql</div>
+                <div class="habilidades"><i class="material-symbols-outlined"> Draw </i>Manejo intermedio de Photoshop</div>
+              </ul>
+            </div>
+          </div>
+        </section>
+        
+        <section class="section" id="clientes">
+          <div class="contenedor-misclientes">
+            <div class="titulo-seccion">
+               <h1>Mis Clientes</h1>
+            </div>
+              <div class="grupo-misclientes">
+                <div class="mis-clientes"><a href="http://www.pepsi.com" target="_blank"><img src="images/emp1.jpg" /></a></div>
+                <div class="mis-clientes"><a href="http://www.spotify.com" target="_blank"><img src="images/emp2.jpg" /></a></div>
+                <div class="mis-clientes"><a href="http://www.mcdonalds.com" target="_blank"><img src="images/emp3.jpg" /></a></div>
+              </div>
+              <div class="grupo-misclientes">
+                <div class="mis-clientes"><a href="http://www.apple.com" target="_blank"><img src="images/emp4.jpg" /></a></div>
+                <div class="mis-clientes"><a href="http://www.bk.com" target="_blank"><img src="images/emp5.jpg" /></a></div>
+              </div>
+            </div>
+        </section>
+        
+        <section class="section" id="about">
+          <div class="contenedor-about">
+            <div class="titulo-seccion">
+              <h1>Acerca de mi</h1>
+            </div>
+            <h3>Datos Personales</h3>
+            <ul>
+              <li>Nombre: Martin Doval</li>
+              <li>Fecha de Nacimiento: 30/04/1978</li>
+              <li>Edad: 44 anios</li>
+              <li>Genero: Masculino</li>
+              <li>Email: pirulo@gmail.com</li>
+              <li>Telefono Fijo : +54 3764 2222222</li>
+              <li>Telefono Celular : +54 3764 33333333</li>
+              <li>Direccion: Hungria 12315</li>
+              <li>Localidad: Posadas</li>
+              <li>Provincia: Misiones</li>
+              <li>Nacionalidad: Argentino</li>
+           </ul>
+           <div>
+            <p>Mi Nombre es <b>Martin Doval</b>, estudie en la provincia de Misiones, me dedico a la programacion desde el año 2002, en el cual trabaje con diferentes herramientas,
+              entre las cuales, use en mis primeras epocas en DOS los lenguajes <b>Clipper y Foxpro</b>
+              <br />
+              Luego entre al mundo de Windows, con <b>Visual Basic y Clarion y Power Builder</b>.
+              <br />
+              Con la aparicion de Internet, comence a experimentar <b>Java, y PHP</b> siendo este ultimo el mas usado en mi epoca de desarrollo web, trabajando con el Framework de PHP Yii.
+              <br />
+              Actualmente estoy estudiando, y actualizandome, con librerias de <b>React, y NodeJS</b>.-
+            </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="contacto">
+          <div class="titulo-seccion">
+            <h1>Contacto</h1>
+          </div>
+          <div class="contenedor-contacto">
+              <i class="material-symbols-outlined"> phone</i> Telefono de Contacto: +54 3764 2222222 
+              <hr />
+              <i class="material-symbols-outlined"> home </i> Direccion: Hungria 1231323
+              <br />
+              <div style="text-align: center; margin-top: 10px;"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7086.9342952306315!2d-55.90212057725909!3d-27.361122584769237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1677592625310!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+              <hr />
+              <div class="formulario-contacto">
+                <div>
+                  <b>Formulario de Contacto</b>
+                  <form id="formulario-contacto" style="margin-top: 10px;">
+                    <div><label style="margin-right: 30px;">Nombre:</label></div><div><input id="form-nombre" name="nombre" type="text" placeholder="Ingrese su nombre..."></div><br>
+                    <div><label style="margin-right: 30px;">Direccion de email:</label></div><div><input id="form-email" name="email" type="email" placeholder="Ingrese su email..."></div><br>
+                    <div><label style="margin-right: 30px;">Consulta:</label></div><div><textarea id="form-consulta" name="consulta" placeholder="Su consulta..."></textarea></div><br>
+                    <button onclick="enviarFormulario()">Enviar Mail</button>
+                  </form>
+                </div>
+              </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+    <!-- Fin de CV -->
+  </body>
+</html>
